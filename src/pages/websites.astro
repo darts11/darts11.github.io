@@ -4,14 +4,14 @@ import Project from "../components/Project.astro";
 import Sidebar from "../components/Sidebar.astro";
 const projects = [
   {
-    title: "CodeCraft",
+    title: "Chris Han VGC Coaching Tool",
     desc: [
-      "Developed a large-scale e-commerce platform for indie game developers",
+      "Developed an original practice tool for my students",
       "Designed and implemented UI, backend, and database architecture",
-      "Contributed to RESTful API and GraphQL design",
-      "Led a team of three engineers for several months"
+      "Created unique puzzles to challenge my students",
+      "Marketed in tandem with my coaching services"
     ],
-    tech: ["React", "Next.js", "Node.js", "MongoDB", "Heroku"]
+    link: <a href="https://chrishancoach.com/">chrishancoach.com</a>
   },
   {
     title: "CloudMason",
@@ -20,7 +20,7 @@ const projects = [
       "Created a backend infrastructure with queues and an event bus",
       "Designed to handle a high volume ~3 million emails per day"
     ],
-    tech: ["Node.js", "RabbitMQ", "Docker", "Kubernetes"]
+    link: "toADD"
   },
   {
     title: "Sarah (HealthEase.io)",
@@ -29,7 +29,7 @@ const projects = [
       "Developed appointment and billing systems",
       "Resolved live production bugs and server issues"
     ],
-    tech: ["React", "Node.js", "Express.js", "MySQL", "AWS"]
+    link: "toADD"
   }
 ];
 ---
@@ -37,7 +37,7 @@ const projects = [
 <!DOCTYPE html>
 <html
 >
-  <Header title="Software Development | Sam Bernstein" />
+  <Header title="Website Development | Christopher Han" />
   <body>
     <div class="content">
         <Sidebar selectedItem="software-development" />
@@ -57,7 +57,7 @@ const projects = [
                       <Project 
                         title={project.title} 
                         desc={project.desc}
-                        tech={project.tech}
+                        link={project.link}
                       />
                     ))}
                   </div>
