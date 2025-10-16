@@ -1,35 +1,31 @@
 ---
 import Header from '../components/Header.astro';
-import Project from "../components/Project.astro";
-import Sidebar from "../components/Sidebar.astro";
+import Project from '../components/Project.astro';
+import Sidebar from '../components/Sidebar.astro';
 const projects = [
   {
-    title: "NetCare",
+    title: "TeleJS",
     desc: [
-      "Built an infrastructure for a telemedicine startup focusing on remote patient monitoring",
-      "Created Azure environment from scratch using Terraform as a IaC tool",
-      "Developed a comprehensive CI/CD pipeline for mobile app deployment",
+      "Built a lightweight, open-source Slack API framework for efficient bot development",
+      "Developed in Node.js and published as an NPM package"
     ],
-    tech: ["Terraform", "Azure", "Docker", "Nginx", "GitLab CI/CD"]
+    tech: ["Node.js", "NPM"]
   },
   {
-    title: "DataMesh",
+    title: "pyPrompter",
     desc: [
-      "Built an infrastructure for a data analytics platform",
-      "Configured VMs and deployed a multi-node Kubernetes cluster on AWS",
-      "Designed to handle a high volume of ~5 million data points per day",
-      "Integrated Grafana and Prometheus for monitoring",
+      "Contributed to a popular open-source Python pip package for building interactive CLIs",
+      "Developed a feature that lets you 'freeze' inquirer choices"
     ],
-    tech: ["Docker", "Kubernetes", "AWS", "Node.js", "RabbitMQ"]
+    tech: ["Python"]
   },
   {
-    title: "CloudEase",
+    title: "WebAssetHub",
     desc: [
-      "Migrated a cloud-based CRM system from one provider to another",
-      "Built the new GCP infrastructure using Terraform as a IaC tool",
-      "Deployed logging and monitoring tools in GKE cluster",
+      "Created a web scraper tool that monitors digital assets across multiple platforms and offers them at competitive prices",
+      "Sold over 700 items"
     ],
-    tech: ["GCP", "Terraform", "Kubernetes", "GitLab"]
+    tech: ["Python", "Selenium"]
   }
 ];
 ---
@@ -37,10 +33,10 @@ const projects = [
 <!DOCTYPE html>
 <html
 >
-  <Header title="DevOps | Sam Bernstein" />
+  <Header title="Personal Projects | Sam Bernstein" />
   <body>
     <div class="content">
-        <Sidebar selectedItem="devops" />
+        <Sidebar selectedItem="personal-projects" />
       <nav class="main">
         <div class="container">
           <div class="back-nav-container">
@@ -50,7 +46,7 @@ const projects = [
             >
           </div>
           <div class="content-container">
-            <h1>DevOps</h1>
+            <h1>Personal Projects</h1>
             <section class="items-container">
                 <div class="resouce-items">
                     {projects.map(project => (
