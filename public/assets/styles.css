@@ -668,4 +668,74 @@ p {
     width: 64px;
     height: 64px;
   }
+
+  .coaching-container {
+  grid-column-gap: 24px;
+  grid-row-gap: 24px;
+  align-items: stretch;
+  text-decoration: none;
+  display: flex;
+}
+
+.single-coaching-category {
+  display: flex;
+}
+
+.coaching-category-image-container {
+  min-height: 180px;
+  min-width: 180px;
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+  background-color: rgba(53, 53, 53, 0.12);
+  border: 1px #000;
+  border-radius: 12px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  box-shadow: 0 1px 1px rgba(255, 255, 255, 0.24), 0 -1px 1px rgba(255, 255, 255, 0.24);
+}
+
+.coaching-category-image-container.devops-img {
+  background-image: none;
+  background-position: 0 0;
+}
+
+.single-coaching-content {
+  flex-direction: column;
+  justify-content: center;
+  display: flex;
+}
+
+.coaching-section {
+  grid-column-gap: 32px;
+  grid-row-gap: 32px;
+  flex-direction: column;
+  display: flex;
+}
+
+.coaching-container {
+    flex-direction: column;
+  }
+
+  .coaching-category-image-container {
+    min-height: 124px;
+    min-width: 124px;
+    margin-bottom: -42px;
+    position: relative;
+  }
+
+  .single-coaching-content {
+    position: relative;
+    top: 1.75rem;
+  }
+
+  .coaching-section {
+    grid-column-gap: 68px;
+    grid-row-gap: 68px;
+  }
+
+  .coaching-category-image {
+    width: 64px;
+    height: 64px;
+  }
 }

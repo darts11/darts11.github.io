@@ -4,28 +4,28 @@ import Project from '../components/Project.astro';
 import Sidebar from '../components/Sidebar.astro';
 const projects = [
   {
-    title: "TeleJS",
+    title: "Luke Whitier- World Champion",
     desc: [
-      "Built a lightweight, open-source Slack API framework for efficient bot development",
-      "Developed in Node.js and published as an NPM package"
+      "Coached Luke to win the 2025 Junior World Championships",
+      "Team creation, game feedback, strategy development"
     ],
-    tech: ["Node.js", "NPM"]
+    link : "https://www.youtube.com/watch?v=EhIZuYddfDc"
   },
   {
-    title: "pyPrompter",
+    title: "Joaquin Roquet- North America International Champion",
     desc: [
-      "Contributed to a popular open-source Python pip package for building interactive CLIs",
-      "Developed a feature that lets you 'freeze' inquirer choices"
+      "Developed unique strategy and gameplans",
+      "Coached mental game and team development"
     ],
-    tech: ["Python"]
+    link: "https://www.youtube.com/watch?v=m1TA-rZFanI"
   },
   {
-    title: "WebAssetHub",
+    title: "Kevin Han- 2 x World Champion",
     desc: [
-      "Created a web scraper tool that monitors digital assets across multiple platforms and offers them at competitive prices",
-      "Sold over 700 items"
+      "Mentee since 2022 (brother for much longer)",
+      "First kid to win the world championships two years consecutively"
     ],
-    tech: ["Python", "Selenium"]
+    link: "https://www.youtube.com/watch?v=m1TA-rZFanI"
   }
 ];
 ---
@@ -50,7 +50,7 @@ const projects = [
             <section class="items-container">
                 <div class="resouce-items">
                     {projects.map(project => (
-                      <Project 
+                      <Coaching
                         title={project.title} 
                         desc={project.desc}
                         tech={project.tech}
