@@ -1,5 +1,5 @@
 ---
-const { title, desc, tech } = Astro.props;
+const { title, desc, tech, link } = Astro.props;
 ---
 
 <div class="single-item">
@@ -9,6 +9,13 @@ const { title, desc, tech } = Astro.props;
       {desc.map(item => <li>{item}</li>)}
     </ul>
   </div>
+  {link && (
+    <div style="margin: 1rem 0;">
+      <a href={link} target="_blank" rel="noopener noreferrer" class="button w-button">
+        Visit Project
+      </a>
+    </div>
+  )}
   <div class="mini-label-white">Technologies &amp; tools</div>
   <div class="chips-container">
     {tech.map(techItem => <div class="single-chip">{techItem}</div>)}

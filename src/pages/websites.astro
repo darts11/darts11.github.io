@@ -31,7 +31,7 @@ const projects = [
 <!DOCTYPE html>
 <html
 >
-  <Header title="Website Development | Christopher Han" />
+  <Header title="Software Development | Sam Bernstein" />
   <body>
     <div class="content">
         <Sidebar selectedItem="software-development" />
@@ -44,7 +44,7 @@ const projects = [
             >
           </div>
           <div class="content-container">
-            <h1>Website Development</h1>
+            <h1>Software Development</h1>
             <section class="items-container">
                 <div class="resouce-items">
                     {projects.map(project => (
@@ -52,6 +52,7 @@ const projects = [
                         title={project.title} 
                         desc={project.desc}
                         tech={project.tech}
+                        link={project.link}
                       />
                     ))}
                   </div>
