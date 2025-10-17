@@ -10,27 +10,20 @@ const projects = [
       "Designed and implemented UI, backend, and database architecture",
       "Created unique puzzles to challenge my students",
       "Marketed in tandem with my coaching services",
-      "https://chrishancoach.com/"
+      "<a href='https://chrishancoach.com/' target='_blank' rel='noopener noreferrer'>https://chrishancoach.com/</a>"
+      
     ],
     tech: ["Flask", "Jinja", "SQL", "Html", "CSS"]
   },
   {
-    title: "CloudMason",
+    title: "Pokemon Scouting Tool",
     desc: [
-      "Contributed to microservices architecture design for email distribution system",
-      "Created a backend infrastructure with queues and an event bus",
-      "Designed to handle a high volume ~3 million emails per day"
+      "Designed a software tool for easy data scouting of online tournaments",
+      "Simplified user interface for public use",
+      "Used profits from private coaching to host free resource",
+      "<a href='https://www.pokemonvgcscouting.com/' target='_blank' rel='noopener noreferrer'>https://www.pokemonvgcscouting.com/</a>"
     ],
-    tech: ["Node.js", "RabbitMQ", "Docker", "Kubernetes"]
-  },
-  {
-    title: "Sarah (HealthEase.io)",
-    desc: [
-      "Contributed to Israel's largest telehealth platform for doctors and patients",
-      "Developed appointment and billing systems",
-      "Resolved live production bugs and server issues"
-    ],
-    tech: ["React", "Node.js", "Express.js", "MySQL", "AWS"]
+    tech: ["Html, css, javascript"]
   }
 ];
 ---
@@ -38,7 +31,7 @@ const projects = [
 <!DOCTYPE html>
 <html
 >
-  <Header title="Software Development | Sam Bernstein" />
+  <Header title="Website Development | Christopher Han" />
   <body>
     <div class="content">
         <Sidebar selectedItem="software-development" />
@@ -51,7 +44,7 @@ const projects = [
             >
           </div>
           <div class="content-container">
-            <h1>Software Development</h1>
+            <h1>Website Development</h1>
             <section class="items-container">
                 <div class="resouce-items">
                     {projects.map(project => (
