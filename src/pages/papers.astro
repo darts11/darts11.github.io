@@ -4,32 +4,34 @@ import Project from "../components/Project.astro";
 import Sidebar from "../components/Sidebar.astro";
 const projects = [
   {
-    title: "NetCare",
+    title: "Hot Button Issue: Staying Cool as the World Heats Up",
     desc: [
-      "Built an infrastructure for a telemedicine startup focusing on remote patient monitoring",
-      "Created Azure environment from scratch using Terraform as a IaC tool",
-      "Developed a comprehensive CI/CD pipeline for mobile app deployment",
+      "Estimated projected indoor temperatures of Nashville homes",
+      "Forecasted Nashville energy consumption over twenty years",
+      "Designed a vulnerability score for areas across Tennesee",
     ],
-    tech: ["Terraform", "Azure", "Docker", "Nginx", "GitLab CI/CD"]
+    link: "https://drive.google.com/file/d/1q636x2Ny8e_kKFPpva8kyC2iS7qHMNmJ/view?usp=sharing",
+    tech: ["MatPlotLabs", "LaTeX", "ARIMA", "Pairwise correlation", "Multivariate analysis"]
   },
   {
-    title: "DataMesh",
+    title: "An Analysis of the Urban Heat Island Effect in Newark, New Jersey",
     desc: [
-      "Built an infrastructure for a data analytics platform",
-      "Configured VMs and deployed a multi-node Kubernetes cluster on AWS",
-      "Designed to handle a high volume of ~5 million data points per day",
-      "Integrated Grafana and Prometheus for monitoring",
+      "Researched and utilized datasets for estimations",
+      "Utilized multivariate regression to forecast temperature changes",
+      "Designed Seasonal ARIMA models to support conclusions"
     ],
-    tech: ["Docker", "Kubernetes", "AWS", "Node.js", "RabbitMQ"]
+    link: "https://drive.google.com/file/d/18dRUIoG1pJTJnsBmvdX97WlnXS2d4Anf/view?usp=sharing",
+    tech: ["MatPlotLabs", "LaTeX", "ARIMA"]
   },
   {
-    title: "CloudEase",
+    title: "Environmental Impact of AI Data Centers",
     desc: [
-      "Migrated a cloud-based CRM system from one provider to another",
-      "Built the new GCP infrastructure using Terraform as a IaC tool",
-      "Deployed logging and monitoring tools in GKE cluster",
+      "Identified reliable datasets to draw conclusions from",
+      "Designed model to estimate carbon dioxide emissions",
+      "Created actionable recommendations for governmental use",
     ],
-    tech: ["GCP", "Terraform", "Kubernetes", "GitLab"]
+    link: "https://drive.google.com/file/d/1kaoUJH4OdiShxNFL-ruN8oGuXuTJf3oN/view?usp=sharing",
+    tech: ["Excel", "LaTeX", "MatPlotLabs"]
   }
 ];
 ---
@@ -37,7 +39,7 @@ const projects = [
 <!DOCTYPE html>
 <html
 >
-  <Header title="DevOps | Sam Bernstein" />
+  <Header title="Papers | Christopher Han" />
   <body>
     <div class="content">
         <Sidebar selectedItem="devops" />
@@ -50,7 +52,7 @@ const projects = [
             >
           </div>
           <div class="content-container">
-            <h1>DevOps</h1>
+            <h1>Written Works</h1>
             <section class="items-container">
                 <div class="resouce-items">
                     {projects.map(project => (
